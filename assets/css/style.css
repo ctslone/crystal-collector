@@ -1,0 +1,108 @@
+body {
+    background-image: url(../images/ep_naturalblack.png);
+    font-family: monospace;
+}
+
+#gameName {
+    background-image: linear-gradient(orange, red);
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#directions {
+    background-image: linear-gradient(red, blue);
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+
+#randomNum {
+    background-image: linear-gradient(blue, purple);
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 15px;
+    height: 75px;
+}
+
+#scoreKeeper {
+    background-image: linear-gradient(blue, purple);
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+    /* margin-left: 10px; */
+    margin-bottom: 10px;
+    padding-top: 5px;
+    /* padding-bottom: 10px; */
+    border-radius: 15px;
+    height: 75px;
+}
+
+#container2{
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.button {
+    display: block;
+    overflow: hidden;
+    height: 125px;  
+    width: 100px;
+    background-color: white;
+}
+
+img {
+    position: relative;
+    right: 10px;
+    overflow: hidden;
+    height: 125px;
+    width: 110px;
+}
+
+/* #first-button {
+    background-image: url(../images/tourmaline.jpg);
+}
+
+#second-button {
+    background-image: url(../images/tourmaline.jpg);
+}
+
+#third-button {
+    background-image: url(../images/tourmaline.jpg);
+}
+
+#fourth-button {
+    background-image: url(../images/tourmaline.jpg);
+} */
+
+#yourScoreText {
+    background-image: linear-gradient(purple, red);
+    font-size: 14px;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 15px;
+    /* height: 75px; */
+}
+
+#yourScore {
+    background-image: linear-gradient(red, orange);
+    font-size: 14px;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 15px;
+    height: 75px;
+}

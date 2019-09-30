@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+    <title>Crystal Guessing Game</title>
+</head>
+<body class="float-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-5" id="gameName">
+                <h2>Crystal Collector!</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6" id="directions">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to the random number. You lose the game if your total score is higher than the random number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time the game starts, the game will change the value of each crystal.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3" id="randomNum">
+                <p>Number to match:</p>
+            </div>
+            <div class="col-2" id="scoreKeeper">
+                <div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Wins:</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Losses:</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="container2">
+            <div class="row">
+                <div class="col-3">
+                    <button class="button" id="first-button"><img src="assets/images/tourmaline.jpg" alt="button-1"></button>
+                </div>
+                <div class="col-3">
+                    <button class="button" id="second-button"><img src="assets/images/emerald-gemstone.jpg" alt="button-2"></button>
+                </div>
+                <div class="col-3">
+                    <button class="button" id="third-button"><img src="assets/images/ruby.jpg" alt="button-3"></button>
+                </div>
+                <div class="col-3">
+                    <button class="button" id="fourth-button"><img src="assets/images/kyanite.jpg" alt="button-4"></button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3" id="yourScoreText">
+                <p>Your total score is:</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-3" id="yourScore">
+                <p></p>
+            </div>
+    
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
