@@ -26,6 +26,8 @@ newGame ();
 
 // declaring a function that begins a new game. will be called when page loads
 function newGame() {
+    // reset counter
+    counter = 0;
     // generating a new winning number
     winningNumber = Math.floor(Math.random()*102) + 19;
         console.log("The current winning number is: " + winningNumber);
@@ -35,7 +37,8 @@ function newGame() {
     $("#wins").html("Wins: " + wins);
     $("#losses").html("Losses: " + losses);
     // using the DOM to reset the current score to 0
-    $("#yourScoreText").html("Your current score is: " + 0);
+    $("#yourScoreText").html("Your current score is:");
+    $("#yourScore").html(counter);
     // give each crystal a random value from 1-12
     // $(".button").each(function () {
         // a random number between 1 and 12 is assigned to crystalNumber
@@ -82,7 +85,8 @@ $(".button").on("click", function() {
     // adding each clicked value to the current counter
     counter += crystalNumber;
     // displaying the newest value on the screen
-    $("#yourScoreText").text("Your current score is: " + counter)
+    $("#yourScoreText").text("Your current score is: ");
+    $("#yourScore").html(counter);
         console.log ("Current score is " + counter)
     
         if (counter === winningNumber) {
@@ -92,6 +96,15 @@ $(".button").on("click", function() {
             newGame();
             // CURRENTLY, WHEN YOU WIN, IT ADDS TO WINS AND RESETS COUNTER TO 0 BUT WHEN YOU PICK A NEW CRYSTAL, THE COUNTER ADDS THE NEW VALUE TO THE OLD COUNTER
         }
+
+        if (counter > winningNumber) {
+            losses++;
+            $("#losses").text("Losses: " + losses)
+                console.log("Current loss total" + losses)
+            newGame();
+
+        }
+        return;
         
 });
 
