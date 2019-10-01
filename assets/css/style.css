@@ -1,10 +1,20 @@
+@font-face {
+    font-family: PaladinsCondensed-rB77;
+    src: url(../images/PaladinsCondensed-rB77.otf)
+}
+
 body {
     background-image: url(../images/ep_naturalblack.png);
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
     font-family: monospace;
 }
 
 #gameName {
     background-image: linear-gradient(orange, red);
+    font-family: PaladinsCondensed-rB77;
+    color: white;
     padding: 10px;
     margin-top: 10px;
     margin-left: 10px;
@@ -12,9 +22,15 @@ body {
     border-radius: 15px;
 }
 
+#gameNameText {
+    font-size: 30px;
+    padding-top: 5px;
+}
+
 #directions {
     background-image: linear-gradient(red, blue);
-    font-size: 14px;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
     color: white;
     margin-top: 10px;
     margin-left: 10px;
@@ -24,7 +40,8 @@ body {
 
 #winningNum {
     background-image: linear-gradient(blue, purple);
-    font-size: 14px;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
     color: white;
     margin-top: 10px;
     margin-left: 10px;
@@ -37,7 +54,8 @@ body {
 
 #scoreKeeper {
     background-image: linear-gradient(blue, purple);
-    font-size: 14px;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
     color: white;
     margin-top: 10px;
     /* margin-left: 10px; */
@@ -48,8 +66,8 @@ body {
     height: 75px;
 }
 
-#losses {
-    /* padding-top: 10px; */
+#yourScore {
+    
 }
 
 #container2{
@@ -91,7 +109,8 @@ img {
 
 #yourScoreText {
     background-image: linear-gradient(purple, red);
-    font-size: 14px;
+    font-family: 'VT323', monospace;
+    font-size: 18px;
     color: white;
     margin-left: 10px;
     margin-bottom: 10px;
@@ -103,11 +122,12 @@ img {
 
 #yourScore {
     background-image: linear-gradient(red, orange);
-    font-size: 14px;
+    font-family: PaladinsCondensed-rB77;
+    font-size: 42px;
     color: white;
     margin-left: 10px;
     margin-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 5px;
     border-radius: 15px;
     height: 75px;
 }

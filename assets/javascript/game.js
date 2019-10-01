@@ -40,17 +40,18 @@ function newGame() {
     $("#yourScoreText").html("Your current score is:");
     $("#yourScore").html(counter);
     // give each crystal a random value from 1-12
-    // $(".button").each(function () {
+    // $("img").each(function () {
         // a random number between 1 and 12 is assigned to crystalNumber
         // var crystalNumber = Math.floor(Math.random()*12) + 1;
         // assigning a data atribute to the variable crystalNumber and logging the number assigned to each crystal
         // COME BACK TO THIS
-        // $(".button").attr("value", crystalNumber);
-            // console.log($(".button").attr("id"), crystalNumber);
+        // $("img").attr("value", crystalNumber);
+            // console.log($(this).attr("id"), crystalNumber);
         
     // });
 
     // assigning each crystal a number. the long way. need to get .each to work right. this is DRY
+
     $("#first-button").each(function () {
         var crystalNumber = Math.floor(Math.random()*12) + 1;
         $(this).attr("crystalValue", crystalNumber);
@@ -86,35 +87,26 @@ $(".button").on("click", function() {
     counter += crystalNumber;
     // displaying the newest value on the screen
     $("#yourScoreText").text("Your current score is: ");
-    $("#yourScore").html(counter);
+    $("#yourScore").text(counter);
         console.log ("Current score is " + counter)
-    
+        // if the user losses, add to losses and then display the # of losses in the div. then run the newGame function
         if (counter === winningNumber) {
             wins++;
             $("#wins").text("Wins: " + wins)
                 console.log("Current wins total" + wins)
             newGame();
-            // CURRENTLY, WHEN YOU WIN, IT ADDS TO WINS AND RESETS COUNTER TO 0 BUT WHEN YOU PICK A NEW CRYSTAL, THE COUNTER ADDS THE NEW VALUE TO THE OLD COUNTER
         }
-
+        // if the user wins, add to wins and then display the # of wins in the div. then run the newGame function
         if (counter > winningNumber) {
             losses++;
             $("#losses").text("Losses: " + losses)
                 console.log("Current loss total" + losses)
             newGame();
-
         }
+        // stop the function (dont think its really needed?)
         return;
         
 });
-
-// function reset() {
-//     winningNumber = Math.floor(Math.random()*102) + 19;
-//         console.log("The current winning number is: " + winningNumber);
-//     $("#winningNum").text("Number to match: " + winningNumber)
-
-//     $("#yourScoreText").html("Your current score is: " + counter);
-// }
 
 
 });
