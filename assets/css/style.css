@@ -22,7 +22,7 @@ body {
     border-radius: 15px;
 }
 
-#randomNum {
+#winningNum {
     background-image: linear-gradient(blue, purple);
     font-size: 14px;
     color: white;
@@ -46,6 +46,10 @@ body {
     /* padding-bottom: 10px; */
     border-radius: 15px;
     height: 75px;
+}
+
+#losses {
+    /* padding-top: 10px; */
 }
 
 #container2{
@@ -92,6 +96,7 @@ img {
     margin-left: 10px;
     margin-bottom: 10px;
     padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 15px;
     /* height: 75px; */
 }
