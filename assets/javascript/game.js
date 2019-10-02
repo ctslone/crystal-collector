@@ -40,39 +40,38 @@ function newGame() {
     $("#yourScoreText").html("Your current score is:");
     $("#yourScore").html(counter);
     // give each crystal a random value from 1-12
-    // $("img").each(function () {
+    $(".button").each(function () {
         // a random number between 1 and 12 is assigned to crystalNumber
-        // var crystalNumber = Math.floor(Math.random()*12) + 1;
+        var crystalNumber = Math.floor(Math.random()*12) + 1;
         // assigning a data atribute to the variable crystalNumber and logging the number assigned to each crystal
-        // COME BACK TO THIS
-        // $("img").attr("value", crystalNumber);
-            // console.log($(this).attr("id"), crystalNumber);
-        
-    // });
+        $(this).attr("crystalValue", crystalNumber);
+            console.log($(this).attr("id"), crystalNumber);
+        console.log(this);
+    });
 
     // assigning each crystal a number. the long way. need to get .each to work right. this is DRY
 
-    $("#first-button").each(function () {
-        var crystalNumber = Math.floor(Math.random()*12) + 1;
-        $(this).attr("crystalValue", crystalNumber);
-            console.log($(this).attr("id"), crystalNumber);
-    });
-    $("#second-button").each(function () {
-        var crystalNumber = Math.floor(Math.random()*12) + 1;
-        $(this).attr("crystalValue", crystalNumber);
-            console.log($(this).attr("id"), crystalNumber);
-            // console.log("You clicked on the " + $(this).attr("id")); 
-    });
-    $("#third-button").each(function () {
-        var crystalNumber = Math.floor(Math.random()*12) + 1;
-        $(this).attr("crystalValue", crystalNumber);
-            console.log($(this).attr("id"), crystalNumber); 
-    });
-    $("#fourth-button").each(function () {
-        var crystalNumber = Math.floor(Math.random()*12) + 1;
-        $(this).attr("crystalValue", crystalNumber);
-            console.log($(this).attr("id"), crystalNumber); 
-    });
+    // $("#first-button").each(function () {
+    //     var crystalNumber = Math.floor(Math.random()*12) + 1;
+    //     $(this).attr("crystalValue", crystalNumber);
+    //         console.log($(this).attr("id"), crystalNumber);
+    // });
+    // $("#second-button").each(function () {
+    //     var crystalNumber = Math.floor(Math.random()*12) + 1;
+    //     $(this).attr("crystalValue", crystalNumber);
+    //         console.log($(this).attr("id"), crystalNumber);
+    //         // console.log("You clicked on the " + $(this).attr("id")); 
+    // });
+    // $("#third-button").each(function () {
+    //     var crystalNumber = Math.floor(Math.random()*12) + 1;
+    //     $(this).attr("crystalValue", crystalNumber);
+    //         console.log($(this).attr("id"), crystalNumber); 
+    // });
+    // $("#fourth-button").each(function () {
+    //     var crystalNumber = Math.floor(Math.random()*12) + 1;
+    //     $(this).attr("crystalValue", crystalNumber);
+    //         console.log($(this).attr("id"), crystalNumber); 
+    // });
     
 };
 
