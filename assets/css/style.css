@@ -75,11 +75,6 @@ body {
     margin-top: 10px;
 }
 
-/* #container2{
-    margin-bottom: 10px;
-    width: 50%;
-} */
-
 .button {
     /* display: block; */
     overflow: hidden;
@@ -97,22 +92,6 @@ img {
     width: 100px;
 }
 
-/* #first-button {
-    background-image: url(../images/tourmaline.jpg);
-}
-
-#second-button {
-    background-image: url(../images/tourmaline.jpg);
-}
-
-#third-button {
-    background-image: url(../images/tourmaline.jpg);
-}
-
-#fourth-button {
-    background-image: url(../images/tourmaline.jpg);
-} */
-
 #yourScoreText {
     background-image: linear-gradient(rgba(128,0,128,.75), rgba(255,0,0,.75));
     font-family: 'VT323', monospace;
@@ -123,7 +102,6 @@ img {
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 15px;
-    /* height: 75px; */
 }
 
 #yourScore {
