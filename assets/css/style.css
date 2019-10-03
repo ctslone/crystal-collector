@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(../images/ep_naturalblack.png);
+    background-image: url(../images/crystal-cave.jpg);
     /* background-position: center;
     background-repeat: no-repeat;
     background-size: cover; */
@@ -28,7 +28,7 @@ body {
 }
 
 #directions {
-    background-image: linear-gradient(red, blue);
+    background-image: linear-gradient(rgba(255,0,0,.75), rgba(0,0,255,.75));
     font-family: 'VT323', monospace;
     font-size: 18px;
     color: white;
@@ -39,7 +39,7 @@ body {
 }
 
 #winningNum {
-    background-image: linear-gradient(blue, purple);
+    background-image: linear-gradient(rgba(0,0,255,.75), rgba(128,0,128,.75));
     font-family: 'VT323', monospace;
     font-size: 18px;
     color: white;
@@ -58,7 +58,7 @@ body {
 }
 
 #scoreKeeper {
-    background-image: linear-gradient(blue, purple);
+    background-image: linear-gradient(rgba(0,0,255,.75), rgba(128,0,128,.75));
     font-family: 'VT323', monospace;
     font-size: 18px;
     color: white;
@@ -75,10 +75,10 @@ body {
     margin-top: 10px;
 }
 
-#container2{
+/* #container2{
     margin-bottom: 10px;
     width: 50%;
-}
+} */
 
 .button {
     /* display: block; */
@@ -114,7 +114,7 @@ img {
 } */
 
 #yourScoreText {
-    background-image: linear-gradient(purple, red);
+    background-image: linear-gradient(rgba(128,0,128,.75), rgba(255,0,0,.75));
     font-family: 'VT323', monospace;
     font-size: 18px;
     color: white;
@@ -127,7 +127,7 @@ img {
 }
 
 #yourScore {
-    background-image: linear-gradient(red, orange);
+    background-image: linear-gradient(rgba(255,0,0,.75), rgba(255,165,0,.75));
     font-family: PaladinsCondensed-rB77;
     font-size: 42px;
     color: white;
