@@ -44,12 +44,17 @@ body {
     font-size: 18px;
     color: white;
     margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px; */
+    margin-right: 5px;
     margin-bottom: 10px;
     padding-top: 10px;
     border-radius: 15px;
     height: 75px;
+}
+
+#current-score-text {
+    font-family: PaladinsCondensed-rB77;
+    font-size: 42px;
 }
 
 #scoreKeeper {
@@ -58,7 +63,7 @@ body {
     font-size: 18px;
     color: white;
     margin-top: 10px;
-    /* margin-left: 10px; */
+    margin-left: 5px;
     margin-bottom: 10px;
     padding-top: 5px;
     /* padding-bottom: 10px; */
@@ -66,8 +71,8 @@ body {
     height: 75px;
 }
 
-#yourScore {
-    
+#yourScoreText {
+    margin-top: 10px;
 }
 
 #container2{
@@ -76,11 +81,12 @@ body {
 }
 
 .button {
-    display: block;
+    /* display: block; */
     overflow: hidden;
     height: 125px;  
     width: 100px;
     background-color: white;
+    margin-right: 10px;
 }
 
 img {
@@ -88,7 +94,7 @@ img {
     right: 10px;
     overflow: hidden;
     height: 125px;
-    width: 110px;
+    width: 100px;
 }
 
 /* #first-button {

@@ -14,15 +14,15 @@
 
     <title>Crystal Guessing Game</title>
 </head>
-<body class="float-left">
+<body>
     <div class="container">
         <div class="row">
-            <div class="col-5" id="gameName">
+            <div class="col-xs-5 mx-auto" id="gameName">
                 <h2 id="gameNameText">Crystal Collector!</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-6" id="directions">
+            <div class="col-md-6 mx-auto" id="directions">
                 <p>You will be given a random number at the start of the game.</p>
                 <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
                 <p>You win the game by matching your total score to the random number. You lose the game if your total score is higher than the random number.</p>
@@ -30,39 +30,49 @@
                 <p>Each time the game starts, the game will change the value of each crystal.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-3" id="winningNum">
-                <p></p>
-            </div>
-            <div class="col-2" id="scoreKeeper">
-                <div>
+
+        <div class="row justify-content-center">
+                <div class="col-md-3" id="winningNum">
                     <div class="row">
-                        <div class="col-12" id="wins">
-                            
+                        <div class="col-7" id="winning-num-text">
+
+                        </div>
+
+                        <div class="col-5 text-center" id="current-score-text">
+
                         </div>
                     </div>
-
-                    <div class="row">
-                        <div class="col-12" id="losses">
-                            
+                </div>
+                <div class="col-md-3" id="scoreKeeper">
+                    <div>
+                        <div class="row">
+                            <div class="col-12" id="wins">
+                                
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-12" id="losses">
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+    
 
-        <div id="container2">
-            <div class="row">
-                <div class="col-3">
+        <div id="container" class="mx-auto">
+            <div class="row justify-content-center">
+                <div class="col-xs-3">
                     <button class="button" id="first-button"><img src="assets/images/tourmaline.jpg" alt="button-1"></button>
                 </div>
-                <div class="col-3">
+                <div class="col-xs-3">
                     <button class="button" id="second-button"><img src="assets/images/emerald-gemstone.jpg" alt="button-2"></button>
                 </div>
-                <div class="col-3">
+                <div class="col-xs-3">
                     <button class="button" id="third-button"><img src="assets/images/ruby.jpg" alt="button-3"></button>
                 </div>
-                <div class="col-3">
+                <div class="col-xs-3">
                     <button class="button" id="fourth-button"><img src="assets/images/kyanite.jpg" alt="button-4"></button>
                 </div>
 
@@ -70,14 +80,14 @@
         </div>
 
         <div class="row">
-            <div class="col-3" id="yourScoreText">
+            <div class="col-md-3 mx-auto" id="yourScoreText">
                 
             </div>
 
         </div>
 
         <div class="row">
-            <div class="col-3" id="yourScore">
+            <div class="col-md-3 mx-auto d-flex justify-content-center" id="yourScore">
                 
             </div>
     

@@ -32,7 +32,8 @@ function newGame() {
     winningNumber = Math.floor(Math.random()*102) + 19;
         console.log("The current winning number is: " + winningNumber);
     // using the DOM to display the winning number in the winningNum div
-    $("#winningNum").text("Number to match: " + winningNumber)
+    $("#winning-num-text").text("Number to match: ");
+    $("#current-score-text").html(winningNumber);
     // using the DOM to change the wins/losses to 0
     $("#wins").html("Wins: " + wins);
     $("#losses").html("Losses: " + losses);
