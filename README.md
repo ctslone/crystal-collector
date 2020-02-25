@@ -15,6 +15,8 @@ With this being a game, one of my goals was to make it mobile friendly so users 
 
 Feel free to open the app on your favorite mobile device or use the developer tools in your favorite browser to view the mobile layout!
 
+![](assets/images/mobile.png)
+
 ## Challenges
 
 A few challenges that I faced when creating this game were:
