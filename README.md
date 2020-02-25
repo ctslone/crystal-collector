@@ -2,6 +2,8 @@
 
 Get ready to test your memorization skills with Crystal Collector! This game requires you to associates shapes, colors and patterns to each other in order to win!
 
+![](assets/images/readme.png)
+
 ## Getting Started
 
 Want to try it out?
