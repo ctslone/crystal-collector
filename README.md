@@ -7,7 +7,7 @@ Get ready to test your memorization skills with Crystal Collector! This game req
 ## Getting Started
 
 Want to try it out?
-Just follow this link: [Crystal Collector](https://ctslone.github.io/unit-4-game/)
+Just follow this link: [Crystal Collector](https://ctslone.github.io/crystal-collector/)
 
 ## Mobile Friendly
 
